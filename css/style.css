@@ -1,0 +1,55 @@
+
+
+.text {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 25px;
+  font-family: fantasy;
+  font-style: oblique;
+  text-align: center;
+  line-height: 60px;
+  text-shadow: 2px 2px DarkRed;
+  background-image: linear-gradient(to bottom right, white, Khaki);
+  padding: 20px;
+}
+
+.text span {
+  width: 50%;
+}
+
+.row {
+  background-color: black;
+}
+
+img {
+  height:300px;
+  width: 100%;
+}
+
+div [class*="col"] {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+div [class*="col"] :hover {
+    border: 3px solid white;
+}
+
+
+.overlay {
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
